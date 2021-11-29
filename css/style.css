@@ -1,0 +1,136 @@
+/* css reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global style */
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-wrapper {
+    display: flex;
+    max-width: 90%;
+}
+
+/* header */
+
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+header .flex-wrapper {
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+header nav ul li {
+    display:inline-block;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+/* banner */
+
+.banner img {
+    width: 100%;
+    height: 125vh;
+    object-fit: cover;
+}
+
+.banner .banner-title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 450px;
+    left: 0px;
+    right: 0;
+    top: 58px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+}
+
+/* best seller */
+.product {
+    margin-top:70px;
+    padding-left: 50px;
+}
+
+.product h2 {
+    margin-bottom: 50px;
+}
+
+.product .product-bestseller {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 20px; 
+}
+
+.product .product-bestseller .product-image img {
+    width: 100%;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+
+.product .product-bestseller p {
+    text-align: left;
+    padding-top:10px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+.product .product-bestseller .price {
+    text-align: left;
+    padding-left:20px;
+    margin-top:5px;
+}
+
+.product .product-bestseller p {
+    padding-left: 20px;
+    padding-right: 15px;
+    /* padding-bottom: 15px; */
+}
+
+.product .product-bestseller button {
+    border: none;
+    padding: 10px 30px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+}
+
+.product .flex-wrapper {
+    justify-content: space-evenly;
+}
+
+.product-title .flex-wrapper {
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
